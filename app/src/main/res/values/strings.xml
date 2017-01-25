@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shared Element Transitions</string>
+
+    <string name="simple_activity_transition">simple_activity_transition</string>
+    <string name="simple_fragment_transition">simple_fragment_transition</string>
+
+    <string name="lion_blurb">The lion (Panthera leo) is one of the big cats in the genus Panthera and a member of the family Felidae. The commonly used term African lion collectively denotes the several subspecies in Africa. With some males exceeding 250 kg (550 lb) in weight,[4] it is the second-largest living cat after the tiger.</string>
+    <string name="gorilla_blurb">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. The eponymous genus Gorilla is divided into two species: the eastern gorillas and the western gorillas (both critically endangered), and either four or five subspecies. They are the largest living primates. The DNA of gorillas is highly similar to that of humans, from 95–99% depending on what is counted, and they are the next closest living relatives to humans after the chimpanzees and bonobos.</string>
+
+</resources>
