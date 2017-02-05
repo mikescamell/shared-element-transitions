@@ -11,8 +11,8 @@
         android:id="@+id/fragment_b_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:drawable="@drawable/gorilla"
         android:scaleType="centerCrop"
+        android:src="@drawable/gorilla"
         android:transitionName="@string/simple_fragment_transition"
         tools:src="@drawable/gorilla" />
 
