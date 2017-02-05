@@ -32,10 +32,4 @@ public class SimpleFragmentB extends Fragment {
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_b, container, false);
     }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
-
 }
