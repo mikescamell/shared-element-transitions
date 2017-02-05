@@ -19,7 +19,7 @@ public class SimpleFragmentA extends Fragment {
         // Required empty public constructor
     }
 
-    public SimpleFragmentA newInstance() {
+    public static SimpleFragmentA newInstance() {
         return new SimpleFragmentA();
     }
 
@@ -39,7 +39,7 @@ public class SimpleFragmentA extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SimpleFragmentB simpleFragmentB = new SimpleFragmentB();
+                SimpleFragmentB simpleFragmentB = SimpleFragmentB.newInstance();
                 getFragmentManager()
                         .beginTransaction()
                         .addSharedElement(imageView, getString(R.string.simple_fragment_transition))

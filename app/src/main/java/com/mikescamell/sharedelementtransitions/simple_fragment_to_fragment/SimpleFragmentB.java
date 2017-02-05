@@ -19,7 +19,7 @@ public class SimpleFragmentB extends Fragment {
         // Required empty public constructor
     }
 
-    public SimpleFragmentB newInstance() {
+    public static SimpleFragmentB newInstance() {
         return new SimpleFragmentB();
     }
 

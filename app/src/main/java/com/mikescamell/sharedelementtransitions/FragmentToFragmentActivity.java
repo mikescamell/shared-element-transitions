@@ -14,7 +14,7 @@ public class FragmentToFragmentActivity extends AppCompatActivity {
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.content, new SimpleFragmentA())
+                .add(R.id.content, SimpleFragmentA.newInstance())
                 .commit();
     }
 }
