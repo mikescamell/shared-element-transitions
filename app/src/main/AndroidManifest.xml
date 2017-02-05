@@ -17,10 +17,7 @@
         </activity>
         <activity android:name=".simple_activity_to_activity.SimpleActivityA" />
         <activity android:name=".simple_activity_to_activity.SimpleActivityB" />
-        <activity android:name=".simple_fragment_to_fragment.FragmentToFragmentActivity" />
-        <activity android:name=".picasso_activity_to_activity.PicassoSimpleActivityA" />
-        <activity android:name=".picasso_activity_to_activity.PicassoSimpleActivityB" />
-        <activity android:name=".picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity" />
+        <activity android:name=".FragmentToFragmentActivity" />
     </application>
 
 </manifest>

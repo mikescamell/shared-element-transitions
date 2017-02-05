@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SimpleActivityA.class));
             }
         });
+
+        Button fragmentToFragmentBtn = (Button) findViewById(R.id.fragment_to_fragment_btn);
+        fragmentToFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FragmentToFragmentActivity.class));
+            }
+        });
     }
 
     @Override
