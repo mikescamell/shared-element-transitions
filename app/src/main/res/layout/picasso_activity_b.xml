@@ -8,19 +8,18 @@
     tools:context="com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityB">
 
     <ImageView
-        android:id="@+id/simple_activity_b_image"
+        android:id="@+id/picasso_activity_b_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/lion"
         android:transitionName="@string/simple_activity_transition"
         tools:src="@drawable/lion" />
 
     <TextView
-        android:id="@+id/simple_activity_b_text"
+        android:id="@+id/picasso_activity_b_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:text="@string/lion_blurb" />
+        android:text="@string/tiger_blurb" />
 
 </LinearLayout>

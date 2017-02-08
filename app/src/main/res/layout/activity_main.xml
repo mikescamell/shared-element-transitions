@@ -24,4 +24,11 @@
         android:layout_height="wrap_content"
         android:text="Fragment to Fragment" />
 
+    <Button
+        android:id="@+id/picasso_activity_to_activity_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picasso Activity to Activity" />
+
+
 </LinearLayout>
