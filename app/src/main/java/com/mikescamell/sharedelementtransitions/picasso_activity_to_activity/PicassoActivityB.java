@@ -34,6 +34,5 @@ public class PicassoActivityB extends AppCompatActivity {
 
                     }
                 });
-
     }
 }
