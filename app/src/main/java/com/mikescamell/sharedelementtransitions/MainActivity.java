@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.mikescamell.sharedelementtransitions.glide_activity_to_activity.GlideActivityA;
+import com.mikescamell.sharedelementtransitions.glide_fragment_to_fragment.GlideFragmentToFragmentActivity;
 import com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityA;
 import com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity;
 import com.mikescamell.sharedelementtransitions.simple_activity_to_activity.SimpleActivityA;
@@ -56,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GlideActivityA.class));
+            }
+        });
+
+        Button glideFragmentBtn = (Button) findViewById(R.id.glide_fragment_to_fragment_btn);
+        glideFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GlideFragmentToFragmentActivity.class));
             }
         });
     }

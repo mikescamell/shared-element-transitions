@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity">
+    tools:context="com.mikescamell.sharedelementtransitions.glide_fragment_to_fragment.GlideFragmentToFragmentActivity">
 
     <ImageView
-        android:id="@+id/picasso_fragment_b_image"
+        android:id="@+id/glide_fragment_b_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -16,10 +16,10 @@
         tools:src="@drawable/gorilla" />
 
     <TextView
-        android:id="@+id/picasso_fragment_b_text"
+        android:id="@+id/glide_fragment_b_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:text="@string/giraffe_blurb" />
+        android:text="@string/armadillo_blurb" />
 
 </LinearLayout>

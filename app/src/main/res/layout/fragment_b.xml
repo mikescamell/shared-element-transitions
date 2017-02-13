@@ -17,7 +17,7 @@
         tools:src="@drawable/gorilla" />
 
     <TextView
-        android:id="@+id/fragemnt_b_text"
+        android:id="@+id/fragment_b_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
