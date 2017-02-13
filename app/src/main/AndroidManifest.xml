@@ -19,9 +19,10 @@
         </activity>
         <activity android:name=".simple_activity_to_activity.SimpleActivityA" />
         <activity android:name=".simple_activity_to_activity.SimpleActivityB" />
-        <activity android:name=".FragmentToFragmentActivity" />
+        <activity android:name=".simple_fragment_to_fragment.FragmentToFragmentActivity" />
         <activity android:name=".picasso_activity_to_activity.PicassoActivityA" />
         <activity android:name=".picasso_activity_to_activity.PicassoActivityB" />
+        <activity android:name=".picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity" />
     </application>
 
 </manifest>

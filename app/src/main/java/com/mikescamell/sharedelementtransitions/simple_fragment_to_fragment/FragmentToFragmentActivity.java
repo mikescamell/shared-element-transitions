@@ -1,9 +1,9 @@
-package com.mikescamell.sharedelementtransitions;
+package com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment.SimpleFragmentA;
+import com.mikescamell.sharedelementtransitions.R;
 
 public class FragmentToFragmentActivity extends AppCompatActivity {
 
