@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity">
+    tools:context="com.mikescamell.sharedelementtransitions.glide_activity_to_activity.GlideActivityB">
 
     <ImageView
-        android:id="@+id/picasso_fragment_b_image"
+        android:id="@+id/glide_activity_b_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
-        android:transitionName="@string/simple_fragment_transition"
-        tools:src="@drawable/gorilla" />
+        android:transitionName="@string/simple_activity_transition"
+        tools:src="@drawable/lion" />
 
     <TextView
-        android:id="@+id/picasso_fragemnt_b_text"
+        android:id="@+id/glide_activity_b_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:text="@string/giraffe_blurb" />
+        android:text="@string/fox_blurb" />
 
 </LinearLayout>

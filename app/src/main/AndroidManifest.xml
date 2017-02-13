@@ -23,6 +23,8 @@
         <activity android:name=".picasso_activity_to_activity.PicassoActivityA" />
         <activity android:name=".picasso_activity_to_activity.PicassoActivityB" />
         <activity android:name=".picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity" />
+        <activity android:name=".glide_activity_to_activity.GlideActivityA" />
+        <activity android:name=".glide_activity_to_activity.GlideActivityB" />
     </application>
 
 </manifest>

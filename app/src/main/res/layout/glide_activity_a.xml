@@ -8,26 +8,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity">
+    tools:context="com.mikescamell.sharedelementtransitions.glide_activity_to_activity.GlideActivityA">
 
     <ImageView
-        android:id="@+id/picasso_fragment_a_imageView"
+        android:id="@+id/glide_activity_a_imageView"
         android:layout_width="128dp"
         android:layout_height="96dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:scaleType="centerCrop"
-        android:transitionName="@string/simple_fragment_transition"
-        tools:src="@drawable/gorilla" />
+        android:transitionName="simple_activity_transition" />
 
     <Button
-        android:id="@+id/picasso_fragment_a_btn"
+        android:id="@+id/glide_activity_a_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:text="Giraffe" />
-
+        android:layout_marginBottom="19dp"
+        android:text="Fox" />
 </RelativeLayout>

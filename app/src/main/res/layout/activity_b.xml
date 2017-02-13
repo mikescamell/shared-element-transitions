@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityB">
+    tools:context="com.mikescamell.sharedelementtransitions.simple_activity_to_activity.SimpleActivityB">
 
     <ImageView
         android:id="@+id/simple_activity_b_image"

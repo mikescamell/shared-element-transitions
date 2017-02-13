@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.mikescamell.sharedelementtransitions.simple_activity_to_activity.SimpleActivityA">
+    tools:context="com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityA">
 
     <ImageView
         android:id="@+id/picasso_activity_a_imageView"
