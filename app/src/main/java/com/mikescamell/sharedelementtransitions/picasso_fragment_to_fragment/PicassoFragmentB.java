@@ -58,7 +58,7 @@ public class PicassoFragmentB extends Fragment {
 
                     @Override
                     public void onError() {
-
+                        startPostponedEnterTransition();
                     }
                 });
     }

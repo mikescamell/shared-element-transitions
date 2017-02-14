@@ -31,7 +31,7 @@ public class PicassoActivityB extends AppCompatActivity {
 
                     @Override
                     public void onError() {
-
+                        supportStartPostponedEnterTransition();
                     }
                 });
     }
