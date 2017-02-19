@@ -10,6 +10,7 @@ import com.mikescamell.sharedelementtransitions.glide_activity_to_activity.Glide
 import com.mikescamell.sharedelementtransitions.glide_fragment_to_fragment.GlideFragmentToFragmentActivity;
 import com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityA;
 import com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity;
+import com.mikescamell.sharedelementtransitions.recycler_view_to_activity.RecyclerViewActivity;
 import com.mikescamell.sharedelementtransitions.simple_activity_to_activity.SimpleActivityA;
 import com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment.FragmentToFragmentActivity;
 
@@ -65,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GlideFragmentToFragmentActivity.class));
+            }
+        });
+
+        Button recyclerViewToAcitivtyBtn = (Button) findViewById(R.id.recycler_view_to_activity_btn);
+        recyclerViewToAcitivtyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RecyclerViewActivity.class));
             }
         });
     }
