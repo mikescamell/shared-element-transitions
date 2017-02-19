@@ -26,9 +26,10 @@
         <activity android:name=".glide_activity_to_activity.GlideActivityA" />
         <activity android:name=".glide_activity_to_activity.GlideActivityB" />
         <activity android:name=".glide_fragment_to_fragment.GlideFragmentToFragmentActivity" />
-        <activity android:name=".recycler_view.recycler_view_to_activity.RecyclerViewToActivityActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_activity.RecyclerViewActivity" />
         <activity android:name=".recycler_view.recycler_view_to_activity.AnimalDetailActivity" />
         <activity android:name=".recycler_view.recycler_view_to_fragment.RecyclerViewToFragmentActivity" />
+        <activity android:name=".recycler_view.recycler_view_to_viewpager.RecyclerViewToViewPagerActivity" />
     </application>
 
 </manifest>

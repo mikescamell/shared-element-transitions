@@ -10,8 +10,8 @@ import com.mikescamell.sharedelementtransitions.glide_activity_to_activity.Glide
 import com.mikescamell.sharedelementtransitions.glide_fragment_to_fragment.GlideFragmentToFragmentActivity;
 import com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityA;
 import com.mikescamell.sharedelementtransitions.picasso_fragment_to_fragment.PicassoFragmentToFragmentActivity;
-import com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_activity.RecyclerViewToActivityActivity;
 import com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_fragment.RecyclerViewToFragmentActivity;
+import com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_viewpager.RecyclerViewToViewPagerActivity;
 import com.mikescamell.sharedelementtransitions.simple_activity_to_activity.SimpleActivityA;
 import com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment.FragmentToFragmentActivity;
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewToAcitivtyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RecyclerViewToActivityActivity.class));
+                startActivity(new Intent(MainActivity.this, com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_activity.RecyclerViewActivity.class));
             }
         });
 
@@ -83,6 +83,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RecyclerViewToFragmentActivity.class));
+            }
+        });
+
+        Button recyclerViewToViewPagerBtn = (Button) findViewById(R.id.recycler_view_to_view_pager_btn);
+        recyclerViewToViewPagerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RecyclerViewToViewPagerActivity.class));
             }
         });
     }

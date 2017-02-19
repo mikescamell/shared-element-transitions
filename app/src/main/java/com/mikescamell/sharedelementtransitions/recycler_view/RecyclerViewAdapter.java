@@ -53,7 +53,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animalItemClickListener.onAnimalItemClick(animalItem, holder.animalImageView, transitionName);
+                animalItemClickListener.onAnimalItemClick(position, animalItem, holder.animalImageView, transitionName);
             }
         });
     }

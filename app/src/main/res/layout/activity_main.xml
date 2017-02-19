@@ -60,4 +60,10 @@
         android:layout_height="wrap_content"
         android:text="RecyclerView to Fragment" />
 
+    <Button
+        android:id="@+id/recycler_view_to_view_pager_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView to ViewPager" />
+
 </LinearLayout>

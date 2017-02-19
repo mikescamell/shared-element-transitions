@@ -1,4 +1,4 @@
-package com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_fragment;
+package com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_viewpager;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -52,12 +52,12 @@ public class RecyclerViewFragment extends Fragment implements AnimalItemClickLis
 
     @Override
     public void onAnimalItemClick(int pos, AnimalItem animalItem, ImageView sharedImageView, String transitionName) {
-        Fragment animalDetailFragment = AnimalDetailFragment.newInstance(animalItem, transitionName);
+        Fragment animalViewPagerFragment = AnimalViewPagerFragment.newInstance(pos, Utils.generateAnimalItems(getContext()));
         getFragmentManager()
                 .beginTransaction()
                 .addSharedElement(sharedImageView, transitionName)
                 .addToBackStack(TAG)
-                .replace(R.id.content, animalDetailFragment)
+                .replace(R.id.content, animalViewPagerFragment)
                 .commit();
     }
 }

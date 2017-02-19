@@ -20,7 +20,7 @@ public class AnimalDetailActivity extends AppCompatActivity {
         supportPostponeEnterTransition();
 
         Bundle extras = getIntent().getExtras();
-        AnimalItem animalItem = extras.getParcelable(RecyclerViewToActivityActivity.EXTRA_ANIMAL_ITEM);
+        AnimalItem animalItem = extras.getParcelable(RecyclerViewActivity.EXTRA_ANIMAL_ITEM);
 
         ImageView imageView = (ImageView) findViewById(R.id.animal_detail_image_view);
         TextView textView = (TextView) findViewById(R.id.animal_detail_text);
@@ -29,7 +29,7 @@ public class AnimalDetailActivity extends AppCompatActivity {
 
         String imageUrl = animalItem.imageUrl;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            String imageTransitionName = extras.getString(RecyclerViewToActivityActivity.EXTRA_ANIMAL_IMAGE_TRANSITION_NAME);
+            String imageTransitionName = extras.getString(RecyclerViewActivity.EXTRA_ANIMAL_IMAGE_TRANSITION_NAME);
             imageView.setTransitionName(imageTransitionName);
         }
 
