@@ -1,4 +1,4 @@
-package com.mikescamell.sharedelementtransitions.recycler_view_to_activity;
+package com.mikescamell.sharedelementtransitions.recycler_view;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -20,6 +20,7 @@ public class AnimalItem implements Parcelable {
             return new AnimalItem[size];
         }
     };
+
     public String name;
     public String detail;
     public String imageUrl;

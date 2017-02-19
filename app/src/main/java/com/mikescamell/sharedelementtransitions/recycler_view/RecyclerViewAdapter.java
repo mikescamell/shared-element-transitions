@@ -1,4 +1,4 @@
-package com.mikescamell.sharedelementtransitions.recycler_view_to_activity;
+package com.mikescamell.sharedelementtransitions.recycler_view;
 
 import android.os.Build;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.mikescamell.sharedelementtransitions.R;
 import com.squareup.picasso.Picasso;
@@ -45,29 +44,27 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         Picasso.with(holder.itemView.getContext())
                 .load(animalItem.imageUrl)
                 .into(holder.animalImageView);
-        holder.animalNameTextView.setText(animalItem.name);
+
+        final String transitionName = "animal_image_" + String.valueOf(position);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            holder.animalImageView.setTransitionName(transitionName);
+        }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    holder.animalImageView.setTransitionName("animal_image_" + String.valueOf(position));
-                }
-                animalItemClickListener.onAnimalItemClick(animalItem, holder.animalImageView);
+                animalItemClickListener.onAnimalItemClick(animalItem, holder.animalImageView, transitionName);
             }
         });
-
     }
 
     public static class ImageViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView animalImageView;
-        private TextView animalNameTextView;
 
         public ImageViewHolder(View itemView) {
             super(itemView);
             animalImageView = (ImageView) itemView.findViewById(R.id.item_animal_square_image);
-            animalNameTextView = (TextView) itemView.findViewById(R.id.item_animal_square_text);
         }
     }
 }
