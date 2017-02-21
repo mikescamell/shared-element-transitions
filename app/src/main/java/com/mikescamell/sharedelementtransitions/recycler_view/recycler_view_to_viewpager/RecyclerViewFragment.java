@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.mikescamell.sharedelementtransitions.R;
+import com.mikescamell.sharedelementtransitions.recycler_view.AnimalGalleryAdapter;
 import com.mikescamell.sharedelementtransitions.recycler_view.AnimalItem;
 import com.mikescamell.sharedelementtransitions.recycler_view.AnimalItemClickListener;
-import com.mikescamell.sharedelementtransitions.recycler_view.RecyclerViewAdapter;
 import com.mikescamell.sharedelementtransitions.recycler_view.Utils;
 
 public class RecyclerViewFragment extends Fragment implements AnimalItemClickListener {
@@ -43,11 +43,11 @@ public class RecyclerViewFragment extends Fragment implements AnimalItemClickLis
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(Utils.generateAnimalItems(getContext()), this);
+        AnimalGalleryAdapter animalGalleryAdapter = new AnimalGalleryAdapter(Utils.generateAnimalItems(getContext()), this);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.setAdapter(animalGalleryAdapter);
     }
 
     @Override

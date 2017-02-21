@@ -16,12 +16,12 @@ import java.util.ArrayList;
  * Created by msc10 on 16/02/2017.
  */
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ImageViewHolder> {
+public class AnimalGalleryAdapter extends RecyclerView.Adapter<AnimalGalleryAdapter.ImageViewHolder> {
 
     private final AnimalItemClickListener animalItemClickListener;
     private ArrayList<AnimalItem> animalItems;
 
-    public RecyclerViewAdapter(ArrayList<AnimalItem> animalItems, AnimalItemClickListener animalItemClickListener) {
+    public AnimalGalleryAdapter(ArrayList<AnimalItem> animalItems, AnimalItemClickListener animalItemClickListener) {
         this.animalItems = animalItems;
         this.animalItemClickListener = animalItemClickListener;
     }

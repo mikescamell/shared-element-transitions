@@ -9,9 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
 import com.mikescamell.sharedelementtransitions.R;
+import com.mikescamell.sharedelementtransitions.recycler_view.AnimalGalleryAdapter;
 import com.mikescamell.sharedelementtransitions.recycler_view.AnimalItem;
 import com.mikescamell.sharedelementtransitions.recycler_view.AnimalItemClickListener;
-import com.mikescamell.sharedelementtransitions.recycler_view.RecyclerViewAdapter;
 import com.mikescamell.sharedelementtransitions.recycler_view.Utils;
 
 public class RecyclerViewActivity extends AppCompatActivity implements AnimalItemClickListener {
@@ -24,11 +24,11 @@ public class RecyclerViewActivity extends AppCompatActivity implements AnimalIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
 
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(Utils.generateAnimalItems(this), this);
+        AnimalGalleryAdapter animalGalleryAdapter = new AnimalGalleryAdapter(Utils.generateAnimalItems(this), this);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.setAdapter(animalGalleryAdapter);
     }
 
     @Override

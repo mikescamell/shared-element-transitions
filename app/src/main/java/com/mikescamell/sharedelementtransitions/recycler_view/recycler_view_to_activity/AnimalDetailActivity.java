@@ -26,7 +26,6 @@ public class AnimalDetailActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.animal_detail_text);
         textView.setText(animalItem.detail);
 
-
         String imageUrl = animalItem.imageUrl;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             String imageTransitionName = extras.getString(RecyclerViewActivity.EXTRA_ANIMAL_IMAGE_TRANSITION_NAME);
