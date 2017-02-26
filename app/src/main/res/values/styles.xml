@@ -9,4 +9,18 @@
         <item name="android:windowContentTransitions">true</item>
     </style>
 
+    <style name="AppTheme.NoActionBar.DefaultActivity">
+        <item name="android:windowEnterTransition">@transition/default_window_fade</item>
+        <item name="android:windowReturnTransition">@transition/default_window_fade</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

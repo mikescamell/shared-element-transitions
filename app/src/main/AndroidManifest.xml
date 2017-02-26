@@ -30,6 +30,21 @@
         <activity android:name=".recycler_view.recycler_view_to_activity.AnimalDetailActivity" />
         <activity android:name=".recycler_view.recycler_view_to_fragment.RecyclerViewToFragmentActivity" />
         <activity android:name=".recycler_view.recycler_view_to_viewpager.RecyclerViewToViewPagerActivity" />
+        <activity
+            android:name=".flash_fix.programmatic_activity.FlashFixProgrammaticActivityA"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".flash_fix.programmatic_activity.FlashFixProgrammaticActivityB"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".flash_fix.xml_activity.FlashFixXmlActivityA"
+            android:theme="@style/AppTheme.NoActionBar.DefaultActivity" />
+        <activity
+            android:name=".flash_fix.xml_activity.FlashFixXmlActivityB"
+            android:theme="@style/AppTheme.NoActionBar.DefaultActivity" />
+        <activity
+            android:name=".flash_fix.fragment.FlashFixProgrammaticFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

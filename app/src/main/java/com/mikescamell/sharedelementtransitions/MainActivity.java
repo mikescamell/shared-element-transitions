@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.mikescamell.sharedelementtransitions.flash_fix.fragment.FlashFixProgrammaticFragmentActivity;
+import com.mikescamell.sharedelementtransitions.flash_fix.programmatic_activity.FlashFixProgrammaticActivityA;
+import com.mikescamell.sharedelementtransitions.flash_fix.xml_activity.FlashFixXmlActivityA;
 import com.mikescamell.sharedelementtransitions.glide_activity_to_activity.GlideActivityA;
 import com.mikescamell.sharedelementtransitions.glide_fragment_to_fragment.GlideFragmentToFragmentActivity;
 import com.mikescamell.sharedelementtransitions.picasso_activity_to_activity.PicassoActivityA;
@@ -91,6 +94,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RecyclerViewToViewPagerActivity.class));
+            }
+        });
+
+        Button programmaticFlashFixActivity = (Button) findViewById(R.id.flash_fix_programmatic_activity_btn);
+        programmaticFlashFixActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FlashFixProgrammaticActivityA.class));
+            }
+        });
+
+        Button xmlFlashFixActivity = (Button) findViewById(R.id.flash_fix_xml_activity_btn);
+        xmlFlashFixActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FlashFixXmlActivityA.class));
+            }
+        });
+
+        Button fragmentFixActivity = (Button) findViewById(R.id.flash_fix_fragment_btn);
+        fragmentFixActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FlashFixProgrammaticFragmentActivity.class));
             }
         });
     }
