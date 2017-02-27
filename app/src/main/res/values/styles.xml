@@ -11,7 +11,7 @@
 
     <style name="AppTheme.NoActionBar.DefaultActivity">
         <item name="android:windowEnterTransition">@transition/default_window_fade</item>
-        <item name="android:windowReturnTransition">@transition/default_window_fade</item>
+        <item name="android:windowExitTransition">@transition/default_window_fade</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
