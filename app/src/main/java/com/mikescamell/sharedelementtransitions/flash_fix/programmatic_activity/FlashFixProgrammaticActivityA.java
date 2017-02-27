@@ -25,9 +25,9 @@ public class FlashFixProgrammaticActivityA extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Fade fade = new Fade();
-        fade.excludeTarget(R.id.appBar, true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Fade fade = new Fade();
+            fade.excludeTarget(R.id.appBar, true);
             fade.excludeTarget(android.R.id.statusBarBackground, true);
             fade.excludeTarget(android.R.id.navigationBarBackground, true);
 
@@ -54,6 +54,5 @@ public class FlashFixProgrammaticActivityA extends AppCompatActivity {
                 startActivity(intent, options.toBundle());
             }
         });
-
     }
 }

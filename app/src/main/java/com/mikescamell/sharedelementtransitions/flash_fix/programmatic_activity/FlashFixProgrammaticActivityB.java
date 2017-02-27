@@ -27,9 +27,9 @@ public class FlashFixProgrammaticActivityB extends AppCompatActivity {
         TextView detailTextView = (TextView) findViewById(R.id.flash_fix_activity_b_text);
         detailTextView.setText(getString(R.string.starfish_blurb));
 
-        Fade fade = new Fade();
-        fade.excludeTarget(R.id.appBar, true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Fade fade = new Fade();
+            fade.excludeTarget(R.id.appBar, true);
             fade.excludeTarget(android.R.id.statusBarBackground, true);
             fade.excludeTarget(android.R.id.navigationBarBackground, true);
             getWindow().setEnterTransition(fade);
