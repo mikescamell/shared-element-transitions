@@ -42,9 +42,6 @@
         <activity
             android:name=".flash_fix.xml_activity.FlashFixXmlActivityB"
             android:theme="@style/AppTheme.NoActionBar.DefaultActivity" />
-        <activity
-            android:name=".flash_fix.fragment.FlashFixProgrammaticFragmentActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
