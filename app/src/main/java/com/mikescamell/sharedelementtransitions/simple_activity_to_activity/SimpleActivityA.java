@@ -27,7 +27,7 @@ public class SimpleActivityA extends AppCompatActivity {
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         SimpleActivityA.this,
                         imageView,
-                        "simple_activity_transition");
+                        getString(R.string.simple_activity_transition));
                 startActivity(intent, options.toBundle());
             }
         });
