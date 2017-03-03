@@ -29,6 +29,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:text="Armadillo" />
+        android:text="@string/armadillo" />
 
 </RelativeLayout>

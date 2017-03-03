@@ -43,7 +43,7 @@ public class FlashFixProgrammaticActivityA extends AppCompatActivity {
                 .into(imageView);
 
         Button button = (Button) findViewById(R.id.flash_fix_xml_activity_a_btn);
-        button.setText("Starfish");
+        button.setText(R.string.starfish);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
