@@ -20,67 +20,67 @@
             android:id="@+id/activity_to_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activity to Activity" />
+            android:text="@string/activity_to_activity" />
 
         <Button
             android:id="@+id/fragment_to_fragment_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fragment to Fragment" />
+            android:text="@string/fragment_to_fragment" />
 
         <Button
             android:id="@+id/picasso_activity_to_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Picasso Activity to Activity" />
+            android:text="@string/picasso_activity_to_activity" />
 
         <Button
             android:id="@+id/picasso_fragment_to_fragment_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Picasso Fragment to Fragment" />
+            android:text="@string/picasso_fragment_to_fragment" />
 
         <Button
             android:id="@+id/glide_activity_to_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glide Activity to Activity" />
+            android:text="@string/glide_activity_to_activity" />
 
         <Button
             android:id="@+id/glide_fragment_to_fragment_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glide Fragment to Fragment" />
+            android:text="@string/glide_fragment_to_fragment" />
 
         <Button
             android:id="@+id/recycler_view_to_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RecyclerView to Activity" />
+            android:text="@string/recyclerview_to_activity" />
 
         <Button
             android:id="@+id/recycler_view_to_fragment_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RecyclerView to Fragment" />
+            android:text="@string/recyclerview_to_fragment" />
 
         <Button
             android:id="@+id/recycler_view_to_view_pager_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RecyclerView to ViewPager" />
+            android:text="@string/recyclerview_to_viewpager" />
 
         <Button
             android:id="@+id/flash_fix_programmatic_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Programmatic Flash Fix Activity" />
+            android:text="@string/programmatic_flash_fix_activity" />
 
         <Button
             android:id="@+id/flash_fix_xml_activity_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="XML Flash Fix Activity" />
+            android:text="@string/xml_flash_fix_activity" />
 
     </LinearLayout>
 

@@ -32,4 +32,16 @@
     <string name="pig_blurb">A pig is any of the animals in the genus Sus, within the Suidae family of even-toed ungulates. Pigs include the domestic pig and its ancestor, the common Eurasian wild boar (Sus scrofa), along with other species; related creatures outside the genus include the peccary, the babirusa, and the warthog. Pigs, like all suids, are native to the Eurasian and African continents. Juvenile pigs are known as piglets. Pigs are highly social and intelligent animals.</string>
     <string name="starfish_blurb">Starfish or sea stars are star-shaped echinoderms belonging to the class Asteroidea. Common usage frequently finds these names being also applied to ophiuroids, which are correctly referred to as brittle stars or "basket stars". About 1,500 species of starfish occur on the seabed in all the world\'s oceans, from the tropics to frigid polar waters. They are found from the intertidal zone down to abyssal depths, 6,000 m (20,000 ft) below the surface.</string>
     <string name="owl_blurb">Owls are birds from the order Strigiformes, which includes about 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight. Exceptions include the diurnal northern hawk-owl and the gregarious burrowing owl.</string>
+
+    <string name="activity_to_activity">Activity to Activity</string>
+    <string name="fragment_to_fragment">Fragment to Fragment</string>
+    <string name="picasso_activity_to_activity">Picasso Activity to Activity</string>
+    <string name="picasso_fragment_to_fragment">Picasso Fragment to Fragment</string>
+    <string name="glide_activity_to_activity">Glide Activity to Activity</string>
+    <string name="glide_fragment_to_fragment">Glide Fragment to Fragment</string>
+    <string name="recyclerview_to_activity">RecyclerView to Activity</string>
+    <string name="recyclerview_to_fragment">RecyclerView to Fragment</string>
+    <string name="recyclerview_to_viewpager">RecyclerView to ViewPager</string>
+    <string name="programmatic_flash_fix_activity">Programmatic Flash Fix Activity</string>
+    <string name="xml_flash_fix_activity">XML Flash Fix Activity</string>
 </resources>
