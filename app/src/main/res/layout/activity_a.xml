@@ -19,6 +19,7 @@
         android:layout_marginBottom="80dp"
         android:scaleType="centerCrop"
         android:src="@drawable/lion"
+        android:contentDescription="@string/lion"
         android:transitionName="@string/simple_activity_transition"
         tools:ignore="UnusedAttribute" />
 

@@ -13,9 +13,9 @@
         android:layout_height="250dp"
         android:scaleType="centerCrop"
         android:src="@drawable/lion"
+        android:contentDescription="@string/lion"
         android:transitionName="@string/simple_activity_transition"
-        tools:ignore="UnusedAttribute"
-        tools:src="@drawable/lion" />
+        tools:ignore="UnusedAttribute" />
 
     <TextView
         android:id="@+id/simple_activity_b_text"
