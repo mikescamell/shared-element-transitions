@@ -19,6 +19,7 @@
         android:layout_marginBottom="80dp"
         android:scaleType="centerCrop"
         android:transitionName="@string/simple_fragment_transition"
+        tools:ignore="UnusedAttribute"
         tools:src="@drawable/gorilla" />
 
     <Button

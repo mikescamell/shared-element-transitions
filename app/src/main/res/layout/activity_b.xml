@@ -14,6 +14,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/lion"
         android:transitionName="@string/simple_activity_transition"
+        tools:ignore="UnusedAttribute"
         tools:src="@drawable/lion" />
 
     <TextView

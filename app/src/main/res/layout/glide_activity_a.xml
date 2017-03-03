@@ -17,7 +17,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:transitionName="@string/simple_activity_transition" />
+        android:transitionName="@string/simple_activity_transition"
+        tools:ignore="UnusedAttribute" />
 
     <Button
         android:id="@+id/glide_activity_a_btn"
