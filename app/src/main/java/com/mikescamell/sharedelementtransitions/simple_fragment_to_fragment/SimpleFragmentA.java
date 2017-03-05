@@ -3,6 +3,7 @@ package com.mikescamell.sharedelementtransitions.simple_fragment_to_fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,7 +43,7 @@ public class SimpleFragmentA extends Fragment {
                 SimpleFragmentB simpleFragmentB = SimpleFragmentB.newInstance();
                 getFragmentManager()
                         .beginTransaction()
-                        .addSharedElement(imageView, getString(R.string.simple_fragment_transition))
+                        .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
                         .addToBackStack(TAG)
                         .replace(R.id.content, simpleFragmentB)
                         .commit();

@@ -3,6 +3,7 @@ package com.mikescamell.sharedelementtransitions.flash_fix.xml_activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -38,7 +39,7 @@ public class FlashFixXmlActivityA extends AppCompatActivity {
                 ActivityOptionsCompat options = ActivityOptionsCompat.
                         makeSceneTransitionAnimation(FlashFixXmlActivityA.this,
                                 imageView,
-                                FlashFixXmlActivityA.this.getString(R.string.simple_activity_transition));
+                                ViewCompat.getTransitionName(imageView));
                 startActivity(intent, options.toBundle());
             }
         });

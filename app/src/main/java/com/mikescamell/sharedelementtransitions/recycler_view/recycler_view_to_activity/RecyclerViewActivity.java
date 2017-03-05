@@ -3,6 +3,7 @@ package com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -32,15 +33,15 @@ public class RecyclerViewActivity extends AppCompatActivity implements AnimalIte
     }
 
     @Override
-    public void onAnimalItemClick(int pos, AnimalItem animalItem, ImageView shareImageView, String transitionName) {
+    public void onAnimalItemClick(int pos, AnimalItem animalItem, ImageView sharedImageView) {
         Intent intent = new Intent(this, AnimalDetailActivity.class);
         intent.putExtra(EXTRA_ANIMAL_ITEM, animalItem);
-        intent.putExtra(EXTRA_ANIMAL_IMAGE_TRANSITION_NAME, transitionName);
+        intent.putExtra(EXTRA_ANIMAL_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
 
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 this,
-                shareImageView,
-                transitionName);
+                sharedImageView,
+                ViewCompat.getTransitionName(sharedImageView));
 
         startActivity(intent, options.toBundle());
     }

@@ -3,6 +3,7 @@ package com.mikescamell.sharedelementtransitions.recycler_view.recycler_view_to_
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -51,11 +52,11 @@ public class RecyclerViewFragment extends Fragment implements AnimalItemClickLis
     }
 
     @Override
-    public void onAnimalItemClick(int pos, AnimalItem animalItem, ImageView sharedImageView, String transitionName) {
+    public void onAnimalItemClick(int pos, AnimalItem animalItem, ImageView sharedImageView) {
         Fragment animalViewPagerFragment = AnimalViewPagerFragment.newInstance(pos, Utils.generateAnimalItems(getContext()));
         getFragmentManager()
                 .beginTransaction()
-                .addSharedElement(sharedImageView, transitionName)
+                .addSharedElement(sharedImageView, ViewCompat.getTransitionName(sharedImageView))
                 .addToBackStack(TAG)
                 .replace(R.id.content, animalViewPagerFragment)
                 .commit();

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Fade;
@@ -50,7 +51,7 @@ public class FlashFixProgrammaticActivityA extends AppCompatActivity {
                 ActivityOptionsCompat options = ActivityOptionsCompat.
                         makeSceneTransitionAnimation(FlashFixProgrammaticActivityA.this,
                                 imageView,
-                                FlashFixProgrammaticActivityA.this.getString(R.string.simple_activity_transition));
+                                ViewCompat.getTransitionName(imageView));
                 startActivity(intent, options.toBundle());
             }
         });

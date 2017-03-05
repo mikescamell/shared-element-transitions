@@ -3,6 +3,7 @@ package com.mikescamell.sharedelementtransitions.simple_activity_to_activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ public class SimpleActivityA extends AppCompatActivity {
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         SimpleActivityA.this,
                         imageView,
-                        getString(R.string.simple_activity_transition));
+                        ViewCompat.getTransitionName(imageView));
                 startActivity(intent, options.toBundle());
             }
         });

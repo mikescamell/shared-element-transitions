@@ -19,7 +19,6 @@ import com.squareup.picasso.Picasso;
 
 public class AnimalDetailFragment extends Fragment {
 
-    public static final String TAG = AnimalDetailFragment.class.getSimpleName();
     private static final String EXTRA_ANIMAL_ITEM = "animal_item";
     private static final String EXTRA_TRANSITION_NAME = "transition_name";
 
