@@ -1,6 +1,6 @@
 package com.mikescamell.sharedelementtransitions.recycler_view;
 
-import android.os.Build;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,22 +38,19 @@ public class AnimalGalleryAdapter extends RecyclerView.Adapter<AnimalGalleryAdap
     }
 
     @Override
-    public void onBindViewHolder(final ImageViewHolder holder, final int position) {
+    public void onBindViewHolder(final ImageViewHolder holder, int position) {
         final AnimalItem animalItem = animalItems.get(position);
 
         Picasso.with(holder.itemView.getContext())
                 .load(animalItem.imageUrl)
                 .into(holder.animalImageView);
 
-        final String transitionName = "animal_image_" + String.valueOf(position);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            holder.animalImageView.setTransitionName(transitionName);
-        }
+        ViewCompat.setTransitionName(holder.animalImageView, animalItem.name);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animalItemClickListener.onAnimalItemClick(position, animalItem, holder.animalImageView);
+                animalItemClickListener.onAnimalItemClick(holder.getAdapterPosition(), animalItem, holder.animalImageView);
             }
         });
     }
