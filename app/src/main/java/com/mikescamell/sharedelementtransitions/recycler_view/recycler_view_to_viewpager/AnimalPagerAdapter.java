@@ -21,7 +21,7 @@ public class AnimalPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         AnimalItem animalItem = animalItems.get(position);
-        return AnimalDetailFragment.newInstance(animalItem, "animal_image_" + position);
+        return AnimalDetailFragment.newInstance(animalItem, animalItem.name);
     }
 
     @Override
