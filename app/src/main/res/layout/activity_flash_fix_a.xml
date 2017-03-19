@@ -28,7 +28,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:transitionName="@string/simple_activity_transition" />
+        android:transitionName="@string/simple_activity_transition"
+        tools:ignore="UnusedAttribute" />
 
     <Button
         android:id="@+id/flash_fix_xml_activity_a_btn"
@@ -37,5 +38,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
-        android:text="Pig" />
+        android:text="@string/pig" />
 </RelativeLayout>

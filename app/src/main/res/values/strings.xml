@@ -1,11 +1,20 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Shared Element Transitions</string>
 
     <string name="simple_activity_transition">simple_activity_transition</string>
     <string name="simple_fragment_transition">simple_fragment_transition</string>
 
+    <string name="lion">Lion</string>
+    <string name="pig">Pig</string>
+    <string name="gorilla">Gorilla</string>
+    <string name="fox">Fox</string>
+    <string name="armadillo">Armadillo</string>
+    <string name="tiger">Tiger</string>
+    <string name="starfish">Starfish</string>
+    <string name="giraffe">Giraffe</string>
+
     <string name="lion_blurb">The lion (Panthera leo) is one of the big cats in the genus Panthera and a member of the family Felidae. The commonly used term African lion collectively denotes the several subspecies in Africa. With some males exceeding 250 kg (550 lb) in weight, it is the second-largest living cat after the tiger.</string>
-    <string name="gorilla_blurb">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. The eponymous genus Gorilla is divided into two species: the eastern gorillas and the western gorillas (both critically endangered), and either four or five subspecies. They are the largest living primates. The DNA of gorillas is highly similar to that of humans, from 95–99% depending on what is counted, and they are the next closest living relatives to humans after the chimpanzees and bonobos.</string>
+    <string name="gorilla_blurb" tools:ignore="PluralsCandidate">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. The eponymous genus Gorilla is divided into two species: the eastern gorillas and the western gorillas (both critically endangered), and either four or five subspecies. They are the largest living primates. The DNA of gorillas is highly similar to that of humans, from 95–99% depending on what is counted, and they are the next closest living relatives to humans after the chimpanzees and bonobos.</string>
     <string name="tiger_blurb">The tiger (Panthera tigris) is the largest cat species, most recognisable for their pattern of dark vertical stripes on reddish-orange fur with a lighter underside. The species is classified in the genus Panthera with the lion, leopard, jaguar and snow leopard. Tigers are apex predators, primarily preying on ungulates such as deer and bovids. They are territorial and generally solitary but social animals, often requiring large contiguous areas of habitat that support their prey requirements.</string>
     <string name="giraffe_blurb">The giraffe (Giraffa) is a genus of African even-toed ungulate mammals, the tallest living terrestrial animals and the largest ruminants. The genus consists of eleven species including Giraffa camelopardalis, the type species. Seven of these species are extinct, prehistoric species known from fossils, while four are still extant.</string>
     <string name="fox_blurb">Foxes are small-to-medium-sized, omnivorous mammals belonging to several genera of the family Canidae. Foxes are slightly smaller than a medium-size domestic dog, with a flattened skull, upright triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush). Twelve species belong to the monophyletic group of Vulpes genus of "true foxes".</string>
@@ -23,4 +32,16 @@
     <string name="pig_blurb">A pig is any of the animals in the genus Sus, within the Suidae family of even-toed ungulates. Pigs include the domestic pig and its ancestor, the common Eurasian wild boar (Sus scrofa), along with other species; related creatures outside the genus include the peccary, the babirusa, and the warthog. Pigs, like all suids, are native to the Eurasian and African continents. Juvenile pigs are known as piglets. Pigs are highly social and intelligent animals.</string>
     <string name="starfish_blurb">Starfish or sea stars are star-shaped echinoderms belonging to the class Asteroidea. Common usage frequently finds these names being also applied to ophiuroids, which are correctly referred to as brittle stars or "basket stars". About 1,500 species of starfish occur on the seabed in all the world\'s oceans, from the tropics to frigid polar waters. They are found from the intertidal zone down to abyssal depths, 6,000 m (20,000 ft) below the surface.</string>
     <string name="owl_blurb">Owls are birds from the order Strigiformes, which includes about 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight. Exceptions include the diurnal northern hawk-owl and the gregarious burrowing owl.</string>
+
+    <string name="activity_to_activity">Activity to Activity</string>
+    <string name="fragment_to_fragment">Fragment to Fragment</string>
+    <string name="picasso_activity_to_activity">Picasso Activity to Activity</string>
+    <string name="picasso_fragment_to_fragment">Picasso Fragment to Fragment</string>
+    <string name="glide_activity_to_activity">Glide Activity to Activity</string>
+    <string name="glide_fragment_to_fragment">Glide Fragment to Fragment</string>
+    <string name="recyclerview_to_activity">RecyclerView to Activity</string>
+    <string name="recyclerview_to_fragment">RecyclerView to Fragment</string>
+    <string name="recyclerview_to_viewpager">RecyclerView to ViewPager</string>
+    <string name="programmatic_flash_fix_activity">Programmatic Flash Fix Activity</string>
+    <string name="xml_flash_fix_activity">XML Flash Fix Activity</string>
 </resources>

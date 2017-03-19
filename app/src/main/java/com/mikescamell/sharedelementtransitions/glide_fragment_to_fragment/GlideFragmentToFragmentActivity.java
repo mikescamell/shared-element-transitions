@@ -12,9 +12,11 @@ public class GlideFragmentToFragmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_to_fragment);
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.content, GlideFragmentA.newInstance())
-                .commit();
+        if (savedInstanceState == null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.content, GlideFragmentA.newInstance())
+                    .commit();
+        }
     }
 }

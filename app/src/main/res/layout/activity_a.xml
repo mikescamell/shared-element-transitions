@@ -19,7 +19,9 @@
         android:layout_marginBottom="80dp"
         android:scaleType="centerCrop"
         android:src="@drawable/lion"
-        android:transitionName="@string/simple_activity_transition" />
+        android:contentDescription="@string/lion"
+        android:transitionName="@string/simple_activity_transition"
+        tools:ignore="UnusedAttribute" />
 
     <Button
         android:id="@+id/simple_activity_a_btn"
@@ -28,5 +30,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
-        android:text="Lion" />
+        android:text="@string/lion" />
 </RelativeLayout>

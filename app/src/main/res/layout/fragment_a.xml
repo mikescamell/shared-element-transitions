@@ -19,8 +19,9 @@
         android:layout_marginBottom="80dp"
         android:scaleType="centerCrop"
         android:src="@drawable/gorilla"
+        android:contentDescription="@string/gorilla"
         android:transitionName="@string/simple_fragment_transition"
-        tools:src="@drawable/gorilla" />
+        tools:ignore="UnusedAttribute" />
 
     <Button
         android:id="@+id/fragment_a_btn"
@@ -29,6 +30,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
-        android:text="Gorilla" />
+        android:text="@string/gorilla" />
 
 </RelativeLayout>
