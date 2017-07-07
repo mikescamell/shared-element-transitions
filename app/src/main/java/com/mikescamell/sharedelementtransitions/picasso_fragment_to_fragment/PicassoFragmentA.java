@@ -58,6 +58,7 @@ public class PicassoFragmentA extends Fragment {
                         .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
                         .addToBackStack(TAG)
                         .replace(R.id.content, simpleFragmentB)
+                        .setAllowOptimization(true)
                         .commit();
             }
         });
