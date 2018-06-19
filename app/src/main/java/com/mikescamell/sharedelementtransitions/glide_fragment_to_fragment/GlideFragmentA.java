@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
+import com.mikescamell.sharedelementtransitions.GlideApp;
 import com.mikescamell.sharedelementtransitions.R;
 
 public class GlideFragmentA extends Fragment {
@@ -42,7 +42,7 @@ public class GlideFragmentA extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final ImageView imageView = (ImageView) view.findViewById(R.id.glide_fragment_a_imageView);
-        Glide.with(getContext())
+        GlideApp.with(getContext())
                 .load(ARMADILLO_PIC_URL)
                 .centerCrop()
                 .into(imageView);

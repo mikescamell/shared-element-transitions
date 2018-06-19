@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
+import com.mikescamell.sharedelementtransitions.GlideApp;
 import com.mikescamell.sharedelementtransitions.R;
 
 public class FlashFixXmlActivityA extends AppCompatActivity {
@@ -25,7 +25,7 @@ public class FlashFixXmlActivityA extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final ImageView imageView = (ImageView) findViewById(R.id.flash_fix_xml_activity_a_imageView);
-        Glide.with(this)
+        GlideApp.with(this)
                 .load(PIG_PIC_URL)
                 .centerCrop()
                 .into(imageView);

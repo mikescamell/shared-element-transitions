@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
+import com.mikescamell.sharedelementtransitions.GlideApp;
 import com.mikescamell.sharedelementtransitions.R;
 
 public class FlashFixProgrammaticActivityA extends AppCompatActivity {
@@ -37,7 +37,7 @@ public class FlashFixProgrammaticActivityA extends AppCompatActivity {
         }
 
         final ImageView imageView = (ImageView) findViewById(R.id.flash_fix_xml_activity_a_imageView);
-        Glide.with(this)
+        GlideApp.with(this)
                 .load(STARFISH_IMAGE_URL)
                 .centerCrop()
                 .into(imageView);

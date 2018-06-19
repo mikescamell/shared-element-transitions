@@ -59,6 +59,7 @@ public class RecyclerViewFragment extends Fragment implements AnimalItemClickLis
                 .addSharedElement(sharedImageView, ViewCompat.getTransitionName(sharedImageView))
                 .addToBackStack(TAG)
                 .replace(R.id.content, animalDetailFragment)
+                .setAllowOptimization(false)
                 .commit();
     }
 }

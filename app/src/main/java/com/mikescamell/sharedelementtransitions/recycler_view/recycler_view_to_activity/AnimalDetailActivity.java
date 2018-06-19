@@ -32,7 +32,7 @@ public class AnimalDetailActivity extends AppCompatActivity {
             imageView.setTransitionName(imageTransitionName);
         }
 
-        Picasso.with(this)
+        Picasso.get()
                 .load(imageUrl)
                 .noFade()
                 .into(imageView, new Callback() {
@@ -42,7 +42,7 @@ public class AnimalDetailActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onError() {
+                    public void onError(Exception e) {
                         supportStartPostponedEnterTransition();
                     }
                 });

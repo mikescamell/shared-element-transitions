@@ -41,7 +41,7 @@ public class AnimalGalleryAdapter extends RecyclerView.Adapter<AnimalGalleryAdap
     public void onBindViewHolder(final ImageViewHolder holder, int position) {
         final AnimalItem animalItem = animalItems.get(position);
 
-        Picasso.with(holder.itemView.getContext())
+        Picasso.get()
                 .load(animalItem.imageUrl)
                 .into(holder.animalImageView);
 

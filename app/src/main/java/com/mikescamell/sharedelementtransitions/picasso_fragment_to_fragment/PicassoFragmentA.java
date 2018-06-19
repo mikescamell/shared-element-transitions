@@ -42,7 +42,7 @@ public class PicassoFragmentA extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final ImageView imageView = (ImageView) view.findViewById(R.id.picasso_fragment_a_imageView);
-        Picasso.with(getContext())
+        Picasso.get()
                 .load(GIRAFFE_PIC_URL)
                 .fit()
                 .centerCrop()
@@ -57,6 +57,7 @@ public class PicassoFragmentA extends Fragment {
                         .beginTransaction()
                         .addSharedElement(imageView, ViewCompat.getTransitionName(imageView))
                         .addToBackStack(TAG)
+                        .setAllowOptimization(true)
                         .replace(R.id.content, simpleFragmentB)
                         .commit();
             }

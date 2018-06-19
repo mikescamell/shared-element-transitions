@@ -45,7 +45,7 @@ public class PicassoFragmentB extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ImageView imageView = (ImageView) view.findViewById(R.id.picasso_fragment_b_image);
-        Picasso.with(getContext())
+        Picasso.get()
                 .load(PicassoFragmentA.GIRAFFE_PIC_URL)
                 .fit()
                 .noFade()
@@ -57,7 +57,7 @@ public class PicassoFragmentB extends Fragment {
                     }
 
                     @Override
-                    public void onError() {
+                    public void onError(Exception e) {
                         startPostponedEnterTransition();
                     }
                 });

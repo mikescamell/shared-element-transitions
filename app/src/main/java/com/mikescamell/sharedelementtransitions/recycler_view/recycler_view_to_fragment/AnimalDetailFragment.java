@@ -65,7 +65,7 @@ public class AnimalDetailFragment extends Fragment {
             imageView.setTransitionName(transitionName);
         }
 
-        Picasso.with(getContext())
+        Picasso.get()
                 .load(animalItem.imageUrl)
                 .noFade()
                 .into(imageView, new Callback() {
@@ -75,7 +75,7 @@ public class AnimalDetailFragment extends Fragment {
                     }
 
                     @Override
-                    public void onError() {
+                    public void onError(Exception e) {
                         startPostponedEnterTransition();
                     }
                 });

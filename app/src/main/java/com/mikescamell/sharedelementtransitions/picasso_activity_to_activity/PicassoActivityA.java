@@ -22,7 +22,7 @@ public class PicassoActivityA extends AppCompatActivity {
         setContentView(R.layout.picasso_activity_a);
 
         final ImageView imageView = (ImageView) findViewById(R.id.picasso_activity_a_imageView);
-        Picasso.with(this)
+        Picasso.get()
                 .load(TIGER_PIC_URL)
                 .fit()
                 .centerCrop()

@@ -18,7 +18,7 @@ public class PicassoActivityB extends AppCompatActivity {
 
         supportPostponeEnterTransition();
 
-        Picasso.with(this)
+        Picasso.get()
                 .load(PicassoActivityA.TIGER_PIC_URL)
                 .fit()
                 .noFade()
@@ -30,7 +30,7 @@ public class PicassoActivityB extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onError() {
+                    public void onError(Exception e) {
                         supportStartPostponedEnterTransition();
                     }
                 });

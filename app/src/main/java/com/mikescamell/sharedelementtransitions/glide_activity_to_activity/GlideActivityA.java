@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
+import com.mikescamell.sharedelementtransitions.GlideApp;
 import com.mikescamell.sharedelementtransitions.R;
 
 public class GlideActivityA extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class GlideActivityA extends AppCompatActivity {
         setContentView(R.layout.glide_activity_a);
 
         final ImageView imageView = (ImageView) findViewById(R.id.glide_activity_a_imageView);
-        Glide.with(this)
+        GlideApp.with(this)
                 .load(FOX_PIC_URL)
                 .centerCrop()
                 .into(imageView);
