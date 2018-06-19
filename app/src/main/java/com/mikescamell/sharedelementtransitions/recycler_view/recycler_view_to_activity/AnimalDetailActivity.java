@@ -22,8 +22,8 @@ public class AnimalDetailActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         AnimalItem animalItem = extras.getParcelable(RecyclerViewActivity.EXTRA_ANIMAL_ITEM);
 
-        ImageView imageView = (ImageView) findViewById(R.id.animal_detail_image_view);
-        TextView textView = (TextView) findViewById(R.id.animal_detail_text);
+        ImageView imageView = findViewById(R.id.animal_detail_image_view);
+        TextView textView = findViewById(R.id.animal_detail_text);
         textView.setText(animalItem.detail);
 
         String imageUrl = animalItem.imageUrl;

@@ -34,9 +34,9 @@ public class SimpleFragmentA extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final ImageView imageView = (ImageView) view.findViewById(R.id.fragment_a_imageView);
+        final ImageView imageView = view.findViewById(R.id.fragment_a_imageView);
 
-        Button button = (Button) view.findViewById(R.id.fragment_a_btn);
+        Button button = view.findViewById(R.id.fragment_a_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -19,7 +19,7 @@ public class GlideActivityB extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.glide_activity_b);
-        ImageView imageView = (ImageView) findViewById(R.id.glide_activity_b_image);
+        ImageView imageView = findViewById(R.id.glide_activity_b_image);
 
         supportPostponeEnterTransition();
 

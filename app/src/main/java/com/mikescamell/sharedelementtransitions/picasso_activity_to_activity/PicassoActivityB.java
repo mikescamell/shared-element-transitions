@@ -14,7 +14,7 @@ public class PicassoActivityB extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.picasso_activity_b);
-        ImageView imageView = (ImageView) findViewById(R.id.picasso_activity_b_image);
+        ImageView imageView = findViewById(R.id.picasso_activity_b_image);
 
         supportPostponeEnterTransition();
 

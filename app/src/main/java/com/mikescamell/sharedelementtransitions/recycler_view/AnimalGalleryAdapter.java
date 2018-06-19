@@ -61,7 +61,7 @@ public class AnimalGalleryAdapter extends RecyclerView.Adapter<AnimalGalleryAdap
 
         public ImageViewHolder(View itemView) {
             super(itemView);
-            animalImageView = (ImageView) itemView.findViewById(R.id.item_animal_square_image);
+            animalImageView = itemView.findViewById(R.id.item_animal_square_image);
         }
     }
 }

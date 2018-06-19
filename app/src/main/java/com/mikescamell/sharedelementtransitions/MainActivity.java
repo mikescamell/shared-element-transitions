@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button activityToActivityBtn = (Button) findViewById(R.id.activity_to_activity_btn);
+        Button activityToActivityBtn = findViewById(R.id.activity_to_activity_btn);
         activityToActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button fragmentToFragmentBtn = (Button) findViewById(R.id.fragment_to_fragment_btn);
+        Button fragmentToFragmentBtn = findViewById(R.id.fragment_to_fragment_btn);
         fragmentToFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button picassoActivityBtn = (Button) findViewById(R.id.picasso_activity_to_activity_btn);
+        Button picassoActivityBtn = findViewById(R.id.picasso_activity_to_activity_btn);
         picassoActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button picassoFragmentBtn = (Button) findViewById(R.id.picasso_fragment_to_fragment_btn);
+        Button picassoFragmentBtn = findViewById(R.id.picasso_fragment_to_fragment_btn);
         picassoFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button glideActivityBtn = (Button) findViewById(R.id.glide_activity_to_activity_btn);
+        Button glideActivityBtn = findViewById(R.id.glide_activity_to_activity_btn);
         glideActivityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button glideFragmentBtn = (Button) findViewById(R.id.glide_fragment_to_fragment_btn);
+        Button glideFragmentBtn = findViewById(R.id.glide_fragment_to_fragment_btn);
         glideFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button recyclerViewToAcitivtyBtn = (Button) findViewById(R.id.recycler_view_to_activity_btn);
+        Button recyclerViewToAcitivtyBtn = findViewById(R.id.recycler_view_to_activity_btn);
         recyclerViewToAcitivtyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button recyclerViewToFragmentBtn = (Button) findViewById(R.id.recycler_view_to_fragment_btn);
+        Button recyclerViewToFragmentBtn = findViewById(R.id.recycler_view_to_fragment_btn);
         recyclerViewToFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button recyclerViewToViewPagerBtn = (Button) findViewById(R.id.recycler_view_to_view_pager_btn);
+        Button recyclerViewToViewPagerBtn = findViewById(R.id.recycler_view_to_view_pager_btn);
         recyclerViewToViewPagerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button programmaticFlashFixActivity = (Button) findViewById(R.id.flash_fix_programmatic_activity_btn);
+        Button programmaticFlashFixActivity = findViewById(R.id.flash_fix_programmatic_activity_btn);
         programmaticFlashFixActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button xmlFlashFixActivity = (Button) findViewById(R.id.flash_fix_xml_activity_btn);
+        Button xmlFlashFixActivity = findViewById(R.id.flash_fix_xml_activity_btn);
         xmlFlashFixActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

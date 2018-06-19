@@ -48,7 +48,7 @@ public class GlideFragmentB extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ImageView imageView = (ImageView) view.findViewById(R.id.glide_fragment_b_image);
+        ImageView imageView = view.findViewById(R.id.glide_fragment_b_image);
 
         GlideApp.with(this)
                 .load(GlideFragmentA.ARMADILLO_PIC_URL)

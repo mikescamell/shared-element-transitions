@@ -26,7 +26,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements AnimalIte
         setContentView(R.layout.activity_recycler_view);
 
         AnimalGalleryAdapter animalGalleryAdapter = new AnimalGalleryAdapter(Utils.generateAnimalItems(this), this);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(animalGalleryAdapter);

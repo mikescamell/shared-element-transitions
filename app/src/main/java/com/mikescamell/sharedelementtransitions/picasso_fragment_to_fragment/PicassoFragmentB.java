@@ -39,7 +39,7 @@ public class PicassoFragmentB extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final ImageView imageView = (ImageView) view.findViewById(R.id.picasso_fragment_b_image);
+        final ImageView imageView = view.findViewById(R.id.picasso_fragment_b_image);
         Picasso.get()
                 .load(PicassoFragmentA.GIRAFFE_PIC_URL)
                 .noFade()

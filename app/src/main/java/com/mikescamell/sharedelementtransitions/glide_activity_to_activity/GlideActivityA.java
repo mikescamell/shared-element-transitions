@@ -21,13 +21,13 @@ public class GlideActivityA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.glide_activity_a);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.glide_activity_a_imageView);
+        final ImageView imageView = findViewById(R.id.glide_activity_a_imageView);
         GlideApp.with(this)
                 .load(FOX_PIC_URL)
                 .centerCrop()
                 .into(imageView);
 
-        Button button = (Button) findViewById(R.id.glide_activity_a_btn);
+        Button button = findViewById(R.id.glide_activity_a_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

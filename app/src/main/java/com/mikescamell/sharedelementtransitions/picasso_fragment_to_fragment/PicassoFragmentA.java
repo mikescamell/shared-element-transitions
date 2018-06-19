@@ -45,7 +45,7 @@ public class PicassoFragmentA extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         postponeEnterTransition();
 
-        final ImageView imageView = (ImageView) view.findViewById(R.id.picasso_fragment_a_imageView);
+        final ImageView imageView = view.findViewById(R.id.picasso_fragment_a_imageView);
         Picasso.get()
                 .load(GIRAFFE_PIC_URL)
                 .into(imageView, new Callback() {
@@ -60,7 +60,7 @@ public class PicassoFragmentA extends BaseFragment {
                     }
                 });
 
-        Button button = (Button) view.findViewById(R.id.picasso_fragment_a_btn);
+        Button button = view.findViewById(R.id.picasso_fragment_a_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

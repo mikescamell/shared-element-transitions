@@ -57,10 +57,10 @@ public class AnimalDetailFragment extends Fragment {
         AnimalItem animalItem = getArguments().getParcelable(EXTRA_ANIMAL_ITEM);
         String transitionName = getArguments().getString(EXTRA_TRANSITION_NAME);
 
-        TextView detailTextView = (TextView) view.findViewById(R.id.animal_detail_text);
+        TextView detailTextView = view.findViewById(R.id.animal_detail_text);
         detailTextView.setText(animalItem.detail);
 
-        ImageView imageView = (ImageView) view.findViewById(R.id.animal_detail_image_view);
+        ImageView imageView = view.findViewById(R.id.animal_detail_image_view);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             imageView.setTransitionName(transitionName);
         }

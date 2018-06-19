@@ -18,9 +18,9 @@ public class SimpleActivityA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.simple_activity_a_imageView);
+        final ImageView imageView = findViewById(R.id.simple_activity_a_imageView);
 
-        Button button = (Button) findViewById(R.id.simple_activity_a_btn);
+        Button button = findViewById(R.id.simple_activity_a_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

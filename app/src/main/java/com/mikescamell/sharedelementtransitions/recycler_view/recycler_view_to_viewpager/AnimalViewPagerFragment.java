@@ -59,7 +59,7 @@ public class AnimalViewPagerFragment extends Fragment {
 
         AnimalPagerAdapter animalPagerAdapter = new AnimalPagerAdapter(getChildFragmentManager(), animalItems);
 
-        ViewPager viewPager = (ViewPager) view.findViewById(R.id.animal_view_pager);
+        ViewPager viewPager = view.findViewById(R.id.animal_view_pager);
         viewPager.setAdapter(animalPagerAdapter);
         viewPager.setCurrentItem(currentItem);
     }

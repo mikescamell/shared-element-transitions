@@ -21,16 +21,16 @@ public class FlashFixXmlActivityA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_fix_a);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.flash_fix_xml_activity_a_imageView);
+        final ImageView imageView = findViewById(R.id.flash_fix_xml_activity_a_imageView);
         GlideApp.with(this)
                 .load(PIG_PIC_URL)
                 .centerCrop()
                 .into(imageView);
 
-        Button button = (Button) findViewById(R.id.flash_fix_xml_activity_a_btn);
+        Button button = findViewById(R.id.flash_fix_xml_activity_a_btn);
         button.setText(R.string.pig);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

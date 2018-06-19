@@ -21,14 +21,14 @@ public class PicassoActivityA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.picasso_activity_a);
 
-        final ImageView imageView = (ImageView) findViewById(R.id.picasso_activity_a_imageView);
+        final ImageView imageView = findViewById(R.id.picasso_activity_a_imageView);
         Picasso.get()
                 .load(TIGER_PIC_URL)
                 .fit()
                 .centerCrop()
                 .into(imageView);
 
-        Button button = (Button) findViewById(R.id.picasso_activity_a_btn);
+        Button button = findViewById(R.id.picasso_activity_a_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

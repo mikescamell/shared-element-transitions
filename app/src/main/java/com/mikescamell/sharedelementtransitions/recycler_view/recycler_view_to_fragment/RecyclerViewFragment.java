@@ -45,7 +45,7 @@ public class RecyclerViewFragment extends Fragment implements AnimalItemClickLis
         super.onViewCreated(view, savedInstanceState);
 
         AnimalGalleryAdapter animalGalleryAdapter = new AnimalGalleryAdapter(Utils.generateAnimalItems(getContext()), this);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(animalGalleryAdapter);
